@@ -1,10 +1,14 @@
-# threejstemplate
+# threejsfacade
 
 Usage:
 
 Run sbt and from under it execute:
 
+```aidl
 fastOptJS
+publishLocal
+```
+
 
 Then:
 

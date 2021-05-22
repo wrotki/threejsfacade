@@ -7,7 +7,7 @@ lazy val root = project
       version      := "0.1-SNAPSHOT",
       scalaVersion := "2.12.6"
     )),
-    name := "threejstemplate",
+    name := "threejsfacade",
     libraryDependencies ++= Seq(
       "org.scala-js"  %%% "scalajs-dom"    % "1.1.0",
 //      "io.monix" %%% "monix" % "3.3.0",
