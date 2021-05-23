@@ -1,11 +1,11 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.{JSGlobal, JSName}
 
 @js.native
 trait MeshBasicMaterialParameters extends js.Object {
-  val color: String = js.native
+  var color: String = js.native
 }
 
 object MeshBasicMaterialParameters {
@@ -15,6 +15,7 @@ object MeshBasicMaterialParameters {
 
 @js.native
 @JSGlobal("THREE.MeshBasicMaterial")
-class MeshBasicMaterial(parameters: MeshBasicMaterialParameters) extends js.Object {
-
+class MeshBasicMaterial(parameters: MeshBasicMaterialParameters) extends Material {
+//  @JSName("color")
+  var color: Color = js.native
 }
