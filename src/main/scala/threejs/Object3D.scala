@@ -30,8 +30,8 @@ object RotationParameters {
 @js.native
 @JSGlobal("THREE.Object3D")
 class Object3D extends js.Object {
-  def  add(object3d: Object3D): Object3D = js.native// TODO: .add ( object : Object3D, ... ) : this
-
-  var position: PositionParameters = js.native
+  var position: Vector3 = js.native
   var rotation: RotationParameters = js.native
+
+  def  add(object3d: Object3D): Object3D = js.native// TODO: .add ( object : Object3D, ... ) : this
 }
