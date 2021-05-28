@@ -17,4 +17,7 @@ object MeshStandardMaterialParameters {
 @JSGlobal("THREE.MeshStandardMaterial")
 class MeshStandardMaterial(parameters: MeshStandardMaterialParameters) extends Material {
   var color: Color = js.native
+  var emissive: Color = js.native
+  var metalness: Float = js.native
+  var roughness: Float = js.native
 }
