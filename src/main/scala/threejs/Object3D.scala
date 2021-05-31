@@ -31,7 +31,12 @@ object RotationParameters {
 @JSGlobal("THREE.Object3D")
 class Object3D extends js.Object {
   var position: Vector3 = js.native
-  var rotation: RotationParameters = js.native
+  var rotation: Euler = js.native
+  var quaternion: Quaternion = js.native
 
-  def  add(object3d: Object3D): Object3D = js.native// TODO: .add ( object : Object3D, ... ) : this
+  def add(object3d: Object3D): Object3D = js.native// TODO: .add ( object : Object3D, ... ) : this
+  def setRotationFromEuler ( euler : Euler ): Unit = js.native
+  def updateMatrixWorld ( force : Boolean ): Unit = js.native
+
+
 }
