@@ -37,6 +37,7 @@ class Object3D extends js.Object {
   def add(object3d: Object3D): Object3D = js.native// TODO: .add ( object : Object3D, ... ) : this
   def setRotationFromEuler ( euler : Euler ): Unit = js.native
   def updateMatrixWorld ( force : Boolean ): Unit = js.native
-
-
+  def translateX(distance: Float): Object3D = js.native
+  def translateY(distance: Float): Object3D = js.native
+  def translateZ(distance: Float): Object3D = js.native
 }
