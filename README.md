@@ -1,26 +1,12 @@
 # threejsfacade
 
-Usage:
+## Setup - links to understand importing thrheejs as a module
 
-Run sbt and from under it execute:
+This is not implemented yet, threejs is loaded into page as a standalone projects file from root app project at the moment
 
-```aidl
-fastOptJS
-publishLocal
-```
+https://threejs.org/docs/#manual/en/introduction/Installation
+
+https://www.scala-js.org/doc/project/module.html
 
 
-Then:
-
-```
-http-server target/scala-2.12/
-```
-
-Open the browser and point it at:
-
-http://localhost:8080/classes/index-dev.html
-
-## threejs API
-
-https://threejs.org/docs/#api/en/core/Object3D
-
+ 

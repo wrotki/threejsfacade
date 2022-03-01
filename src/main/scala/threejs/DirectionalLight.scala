@@ -1,10 +1,10 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 @js.native
-@JSGlobal("THREE.DirectionalLight")
+@JSImport("three", "DirectionalLight")
 class DirectionalLight(color: Int, intensity: Float) extends Light(color, intensity) {
   var target: Object3D = js.native
 }

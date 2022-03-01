@@ -1,9 +1,9 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSGlobal, JSName}
+import scala.scalajs.js.annotation.JSImport
 
 @js.native
-@JSGlobal("THREE.Material")
+@JSImport("three", "Material")
 class Material() extends js.Object {
 }

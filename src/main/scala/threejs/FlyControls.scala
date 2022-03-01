@@ -1,12 +1,11 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 import org.scalajs.dom.Element
 
-
 @js.native
-@JSGlobal("THREE.FlyControls")
+@JSImport("three/examples/jsm/controls/FlyControls.js", "FlyControls")
 class FlyControls(camera: Camera, htmlDOMElement: Element) extends EventDispatcher {
   var dragToLook: Boolean = js.native
   var movementSpeed: Float = js.native

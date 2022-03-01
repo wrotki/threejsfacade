@@ -1,9 +1,9 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 @js.native
-@JSGlobal("THREE.EventDispatcher")
+@JSImport("three", "EventDispatcher")
 class EventDispatcher() extends js.Object {
 }

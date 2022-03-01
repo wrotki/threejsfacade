@@ -1,7 +1,7 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 @js.native
 trait LineMaterialParameters extends js.Object {
@@ -14,7 +14,7 @@ object LineMaterialParameters {
 }
 
 @js.native
-@JSGlobal("THREE.LineBasicMaterial")
+@JSImport("three", "LineBasicMaterial")
 class LineBasicMaterial(parameters: LineMaterialParameters) extends Material {
 
 }

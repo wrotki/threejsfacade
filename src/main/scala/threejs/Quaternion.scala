@@ -1,10 +1,10 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 @js.native
-@JSGlobal("THREE.Quaternion")
+@JSImport("three", "Quaternion")
 class Quaternion(var x: Float, var y: Float, var z: Float, var w: Float) extends js.Any {
   def identity () : Quaternion = js.native
   def multiply ( q : Quaternion ) : Quaternion = js.native

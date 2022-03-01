@@ -1,11 +1,11 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 // https://github.com/mrdoob/three.js/blob/master/src/cameras/PerspectiveCamera.js
 
 @js.native
-@JSGlobal("THREE.PerspectiveCamera")
+@JSImport("three", "PerspectiveCamera")
 class PerspectiveCamera(fov: Float, aspect: Float, near: Float, far: Float) extends Camera {
 }

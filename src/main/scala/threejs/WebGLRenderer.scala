@@ -3,7 +3,7 @@ package threejs
 import org.scalajs.dom.Element
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 
 @js.native
@@ -25,6 +25,6 @@ trait WebGLRendererInterface extends js.Object {
 }
 
 @js.native
-@JSGlobal("THREE.WebGLRenderer")
+@JSImport("three", "WebGLRenderer")
 class WebGLRenderer(parameters: js.Object) extends WebGLRendererInterface {
 }

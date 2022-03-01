@@ -1,7 +1,7 @@
 package threejs
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.JSImport
 
 @js.native
 trait PositionParameters extends js.Object {
@@ -28,7 +28,7 @@ object RotationParameters {
 }
 
 @js.native
-@JSGlobal("THREE.Object3D")
+@JSImport("three", "Object3D")
 class Object3D extends js.Object {
   var position: Vector3 = js.native
   var rotation: Euler = js.native
