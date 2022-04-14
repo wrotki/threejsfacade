@@ -12,8 +12,12 @@ trait MeshBasicMaterialParameters extends js.Object {
 object MeshBasicMaterialParameters {
   def apply(color: String): MeshBasicMaterialParameters =
     js.Dynamic.literal(color = color).asInstanceOf[MeshBasicMaterialParameters]
+
   def apply(map: Texture): MeshBasicMaterialParameters =
     js.Dynamic.literal(map = map).asInstanceOf[MeshBasicMaterialParameters]
+
+  def apply(color: String, map: Texture): MeshBasicMaterialParameters =
+    js.Dynamic.literal(color = color, map = map).asInstanceOf[MeshBasicMaterialParameters]
 }
 
 @js.native
